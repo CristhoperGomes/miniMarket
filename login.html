@@ -15,7 +15,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <title>Quitanda Online :: Título da Página</title>
+    <title>Quitanda Online :: Login</title>
 
 </head>
 
@@ -62,23 +62,31 @@
     </header>
     <main>
         <div class="container">
-            <h1>Quem Somos</h1>
-            <hr>
-            <p>
-                Quitanda Online é uma loja virtual (e-commerce) fictícia criada como estudo de caso para o curso
-                "Desenvolvimento de uma Loja Virtual com Bootstrap 5 e ASP.NET 5" disponibilizado gratuitamente pelo
-                Prof. Ricardo Maroquio em seu canal no YouTube.
-            </p>
-            <p>
-                O código-fonte pode ser obtido via GitHub, conforme orientações apresentadas ao longo dos vídeos do
-                curso no YouTube. Este estudo de caso pode ser utilizado livremente como base para outras lojas
-                virtuais, sem ônus para o usuário.
-            </p>
-            <p>
-                Bons estudos e boa programação!
-            </p>
-
-        </div>
+            <div class="row justify-content-center">
+                <form action="" class="col-sm-10 col-md-8 col-lg-6">
+                    <h1 class="mb-3">Identifique-se, por favor</h1>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="txtEmail" placeholder=" ">
+                        <label for="txtEmail">E-mail</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="txtSenha" placeholder=" ">
+                        <label for="txtSenha">Senha</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input type="checkbox" class="form-check-input" id="chkLembrar">
+                        <label for="chkLembrar" class="form-check-label">Lembrar de mim</label>
+                    </div>
+                    <button class="btn btn-lg btn-danger" type="button"
+                        onclick="window.location.href='/index.html'">Entrar</button>
+                    <p class="mt-3">
+                        Ainda não é cadastrado? <a href="cadastro.html">clique aqui</a> para se cadastrar.
+                    </p>
+                    <p class="mt-3">
+                        Esqueceu sua senha? <a href="recuperarsenha.html">clique aqui</a> para recupera-la.
+                    </p>
+                </form>
+            </div>
     </main>
 
     <div style="height: 273px;" class="d-block d-md-none"></div>
